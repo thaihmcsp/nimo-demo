@@ -1,0 +1,2537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awsome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font-size -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <!-- css -->
+      <link rel="stylesheet" href="owl.carousel.min.css">
+      <link rel="stylesheet" href="owl.theme.default.min.css">
+      <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header-container">
+            <div class="header-main">
+                <div class="header-main-logo">
+                    <a href="">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAABACAMAAAAXtNroAAAApVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+4/eNVAAAANnRSTlMAmu6xuIE/RfvlI97FCEzqVBxQN8oCE/j0DcChKI3Y0m8E4bWsaWK9p1zOLReUiHvwdUk8VzMa5A6zAAAGW0lEQVRo3uWb2XaqMBRAjzNaKdIyKqNFxHlqz/9/2r0l0UjILZIXF737qXYxbZOcIaXwOCM/dKZ9+H+4JAr+xdnA/0G8MpAyhv8B6zDEGw78fjYtG+8Ywm/ndYlFlvCrcRcB8uzgF6P7bWTMTz38JoLfitlPFGSMJyYQ5U/4VXif0b41m2VJMtWQoWRf8JeMhK9sNpvtDulAhcbj+QGK0PY65KyxgNNJY2gy+kxBEWGqAsVBnpcVyDGaBeNDDE8ltVHExwBu6ChgupVK9U4eH0x4HvEOBRx3XmFkUMT8C+ozxpwFPI8ZMhTbOba1YNl65eNTL5gPNa19dGwFGU59Z5Wen8HTOFxtO6nnwiPE+mX/ch3nbW1luopm8CwGSEg8qIOZarK9VRdzVvAkzIAMcQR10Q3JRx8NnzuvF5iTQn3cNZnaKtTE6nWzFTwNsiZ9kEFv02FuFBtSYrkgxSk/uwONgjQLB5BDPeaJqln1NomeHkjAeo13/pvYz7WZBRyroJ2Qen2btV8iIHwuwxaf56xduORaNj3qhJoyXCcpf13zZLwIGUcm/wTGdAEQst0d+eA3EdU2gSVIhuv8IQ3WeZ/y+4+KEX3Oz7z+GG8onQ03TwUIM/8b/uUEeQAyoIQp3uk8cYv+VbRvYGGOoQpqvM0tfoT5oaQsCVxguCFRs4Cy/cACSuv+8Dn+m37h6fMj54DfdPnss9Oc7gZ4PKO0EfSen9+DAv1rV2LCHWQXbXD7ntr3dVCXHWpeBc/XewyRJ7ybFgEKKQfWT/y3sjnN2wodikQ2l82qlLEFd0xFym/lQ3dImdAFYWMZzWMLFP+NMip1My2h8kC0s6fmgS5z6yhj72FlTCyyKBIsKnttvGJrCuvVLfa4rU7OkhxEPnRt3uELczyhciTavz3Tfq+WMi4eVsa2/3Z584kgU1aD61xe6ACmdyJLlz0z394OC4H16HKxpAtC5bNolLfa92Otaiorb1XKPJzyiQ7wwgSCeo3Qrz8rq1oxsm5tcv+yMksizojLjF0ybLWU0b4AZSmjbJFRd96B8amQKG+KlYvJ68UsfAxBrAzW7KiMv4Bn4SDOaipj25NWZk3Pm6jB7/+svLXvT43JoKdMmcdU6fSY+AuXXTTreHWVca5XTuz1Hu/x1zflrqiIjwNu4QmVoUW25+7juqZyymXc8fdFUhMYDyuv+zYNPG6V8gekDl5xUuhclV0yhy9QJCVztkJ5gzmbuy3pHlQq+0ifXkJ5DBOaU6ZqxcT+ANi2jkS4pQNT9sjYmCAq7xTzZ2XosqrzQgLLtlp5jJSOJ6EMERISs2qU/6Keo310VgHulAf0SjxkYeoVygPiaQFAQsuQamWDZRvfqq8M1zW6qxplRkF5IljKrMjcVChDeO2MdYWdUKnMaEdxbWXIkHCSUWZX4iGpa1ulnJLfxLCnmjWUCZ24tnK8RMJKRplatPn76lVruViOrFTyFZ3rK2NUU5l1gqi8GhLK6rVkElXEAVQp0/pjfaDHSyh36iuDPkeKhDL9aQoFVHLJfbWyZSMjlVH2JZRJKySrnNKnFaXO92plaOENTZVQbm9klKFvyyu7Gl0W5UbPgAeUPbzRg/rK4RdIKcNEkVRmRbbSU4FgXQeuX6HMyhFahtRW1hYmSCpDJK9srpEw7L1bptX3j0jI4CHlAdv6q6ls+y6AtDL40sqgD1HE2n1MGUIkbB5UTpCQjGRq7DsyaWX4ouMqbM+qlVO2xVOpzCKPcQGCvHI8RcJFpNwRKLMm2QsqX9jglcvlyBluOCzvCZ2nznoFPLzdSVQczQDKm9OOewujRq4jzLD74lR0uXd3nH0MAlxFGMgPfNnyQjpPWVbsT4/cNFa4tKnndzqxUZzclo6mA5T32RJgeInNhFv6T8vwBByWxt7QY4274oIke2FBGPfGnQtwWL7RpXdWD+POmR66yPyygu5ni7g4hJNWNxyuP3akvRTiZo7WgxJf3fWiXJ58giQBbVybxCstYiVgWz7QKFSHbgpLYdAevFmQma3p8itZGUGz0MkwhxLOUVPfSu/RGvoM9bBmmHO0oGmoBhKWLP5XMzq0kTCB5rGdI8UZJ61HmHXz5NTI2EXw5iiND83EmqIcdsPecrsjPhxRgmmj/wPS2mtYk/EAGo558ZdhGx9BmRtJuoVm8gdWp9DbyVMtvQAAAABJRU5ErkJggg==" alt="">
+                    </a>
+                </div>
+                <div class="header-main-navbar">
+                    <ul class="header-main-menu">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                           <a href="">Live</a>
+                        </li>
+                        <li class="dropdown-catefory">
+                            <a href="">Category
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-catefory__box">
+                                <h2>Hot category</h2>
+                                <div class="dropdown-catefory__conatainer">
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/162503C5484F44D0D6E2B3706E7C60DA_CSGO.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="CSGO">CSGO</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/game/A869BE86987B8396FF4A71023CAE4BD5_poster.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="ARK: Survial Evolved">ARK: Survial Evolved</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/907E352061A6EE3EF4E58A9B74F4E649_71e179563a513bbb7293c831593c0ed1.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="League of Legends: Wild RiFT">League of Legends: Wild RiFT</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/5E2B7DEE566F12BCC4F26580E8421E9F_b223f0ef4dadd4b55a3091cd829ab3c3.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="Valorant">Valorant</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/24314FEA9CC06302986513F8695B3316_4ae75ac434ef123a99939f231757ccba.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="Call of Duty Mobile">Call of Duty Mobile</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/85D90EDE97ED239431D27A9BA05FAA54_Minecfart.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="Minecraf Moblie">Minecraf Moblie</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/5EE04056D78462A9916B88D90BFF1250_fifa4.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="FIFA ONLINE 4">FIFA ONLINE 4</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/5BAD8D59AF871CE24987A3F544AA7E06_timg.jpg/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="Red Dead Redemption 2">Red Dead Redemption 2</div>
+                                    </div>
+                                    <div class="dropdown-catefory__card">
+                                        <img src="https://img.nimo.tv/o/banner/A7DD965C06C176D63361E3EBE5613EE_72c5eeb9a75c4855b279e9f435cb5f4d.png/w500_l0/img.webp" alt="">
+                                        <div class="dropdown-catefory__name-game" title="Naraka: Bladepoint">Naraka: Bladepoint</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-catefory__footer">
+                                    View all
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <a href="">Esports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-minor">
+                <div class="header-minor-othes">
+                    <!-- search -->
+                    <div class="dropdown-search">
+                        <div class="header-minor-search" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="MixiGaming">
+                        </div>
+                        <ul class="dropdown-menu search">
+                          <div class="li-first"><a class="dropdown-item-1" href="#">Top Search</a></div>
+                          <li><a class="dropdown-item-2" href="#">
+                            <span>1</span>
+                            MixiGaming</a></li>
+                          <li><a class="dropdown-item-3" href="#">
+                            <span>2</span>
+                            Thầy Giáo Ba</a></li>
+                          <li><a class="dropdown-item-4" href="#">
+                            <span>3</span>
+                            TRỰC TIẾP GAME</a></li>
+                          <li><a class="dropdown-item-5" href="#">
+                            <span>4</span>
+                            ASCI 2022</a></li>
+                          <li><a class="dropdown-item-6" href="#">
+                            <span>5</span>
+                            500BROS FPS</a></li>
+                          <li><a class="dropdown-item-7" href="#">
+                            <span>6</span>
+                            Nhism</a></li>
+                          <li><a class="dropdown-item-8" href="#">
+                            <span>7</span>
+                            Misthy</a></li>
+                          <li><a class="dropdown-item-9" href="#">
+                            <span>8</span>
+                            Dev Nguyen</a></li>
+                          <li><a class="dropdown-item-10" href="#">
+                            <span>9</span>
+                            Vodka Quang</a></li>
+                          <li><a class="dropdown-item-11" href="#">
+                            <span>10</span>
+                            Bộ Bim</a></li>
+                        </ul>
+                    </div>
+                    <!-- recharge -->
+                    <div class="recharge-container" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                        <div class="header-minor-recharge" >
+                            <img src="	https://www.nimo.tv/nms/images/topup-diamond.54c407baed259dfc727efa5806af92df.png" alt="">
+                            <span>Recharge</span>
+                        </div>
+                    </div>
+                    <!-- golive -->
+                    <div class="header-minor-golive">
+                        <a href="" class="header-minor-golive__container">
+                            <img src="https://www.nimo.tv/nms/images/go-live-181212.55fd4578a0194faec3548b1645b1c896.png" alt="">
+                            <span>Go Live</span>
+                            <div class="dropdown-golive__box">
+                                <ul class="golive-list">
+                                    <li class="golive-list-items">
+                                        <a href="">
+                                            PC Streamer
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="golive-list-items-fix">
+                                        <a href="">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                            Mobie game and Live <br> Show
+                                        </a>
+                                    </li>
+                                    <li class="golive-list-items">
+                                        <a href="">
+                                            Moblie clinet
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- down -->
+                    <div class="header-minor-down">
+                        <a href="">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                        <div class="dropdown-minor-down__box">
+                            <h2>Download App</h2>
+                            <div class="dropdown-minor-down__logo">
+                                <a href="" class="dropdown-minor-down__conatiner">
+                                    <p>
+                                        <i class="fa-brands fa-apple"></i>
+                                        <span>Apple Store</span>    
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="dropdown-minor-down__logo">
+                                <a href="" class="dropdown-minor-down__conatiner">
+                                    <p>
+                                        <i class="fa-brands fa-google-play"></i>
+                                        <span>Google Play</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="dropdown-minor-down__QR">
+                                <a href="">
+                                    <img src="https://www.nimo.tv/nms/images/qrcodeNimotv_header.d497320243bbfe52e86c67c0e2a47e58.png" alt="">
+                                </a>
+                                <span>Scan QR Code Download</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- religion -->
+                    <div class="dropdown-religion">
+                        <div class="header-minor-religion" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://img.nimo.tv/an/img/country_flag/vn.png/l0/img.webp" alt="">
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu__box">
+                                <h5>Choose country/region</h5>
+                                <div class="religion__posittion">
+                                  <h6>My position</h6>
+                                  <span>Vietnam</span>
+                                </div>
+                                <div class="religion__sever">
+                                    <h6>Hot area</h6>
+                                    <div class="religion__sever-btn">
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Global
+                                        </span>
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Indonexia
+                                        </span>
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Vietnam
+                                        </span>
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Turkey
+                                        </span>
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Morocoss
+                                        </span>
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Tunisia
+                                        </span>
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Iraq
+                                        </span>
+                                        <span>
+                                            <img src="https://img.nimo.tv/nw/nms/images/country_icon.3ec8bda0b3d878dee2cfb8e80bd6848d.png/w30_l0/img.webp" alt="">
+                                            Egypt
+                                        </span>
+                                        <span>
+                                            More
+                                        </span>                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dropdown-dots -->
+                    <div class="dropdown-dots">
+                        <div class="header-minor-dots" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-dots__box">
+                                <ul class="dropdown-menu-dots__container">
+                                    <li class="dropdown-dots-list__items1">
+                                      <div class="items1__language">
+                                            <i class="fa-solid fa-earth-asia"></i>
+                                            <span>Language</span>
+                                      </div>
+                                      <p>English</p>
+                                    </li>
+                                    <li class="dropdown-dots-list__items2">  
+                                      <div class="items2__darkmode" for="flexSwitchCheckChecked">
+                                          <i class="fa-solid fa-circle-half-stroke"></i>
+                                          <span>Dark mode</span> 
+                                      </div>
+                                      <div class="form-check form-switch">
+                                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>   
+                                      </div>
+                                    </li>
+                                    <li class="dropdown-dots-list__items3">
+                                        <div class="items3__desktop">
+                                            <i class="fa-solid fa-desktop"></i>
+                                            <span>Add to Desktop</span>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-dots-list__items4">
+                                        <div class="items4__follow">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>My Following</span>
+                                      </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- btn -->
+                <div class="header-minor-btn">
+                    <button class="sign-up">Sign Up</button>
+                    <button class="login">Login</button>
+                </div>
+            </div>
+        </div>
+       <!-- body -->
+       <div class="body-container">
+            <div class="body-banner"></div>
+            <div class="body-main">
+                <div class="body-topgame">
+                    <div class="body-topgame-navbar">
+                        <div class="body-topgame_list">
+                            <div class="topgame-tittle">
+                                <span>Top Game</span>
+                                <p>View All
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </p>
+                            </div>
+                            <div class="topgame-btn">
+                                <span class="topgame-btn__all">All</span>
+                                <span class="topgame-btn__Mobile">Mobile game</span>
+                                <span class="topgame-btn__PC">PC game</span>
+                                <span class="topgame-btn__Others">Others</span>
+                            </div>
+                        </div>
+                        <!-- <div class="topgame-btn__arrows">
+                            <i class="fa-solid fa-angle-left"></i>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div> -->
+                    </div>
+                    <div class="topgame-card__container">
+                        <div class="topgame-card-slide owl-carousel owl-theme">
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>Live show</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/banner/7644B1A8F5A0B1D65F4236AD87F5F637_286febde2064453836cff5aaa33ce1b3.jpg/w256_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >Liveshow</h3>
+                                    <h4 class="topgame-card__numberviews">313 lives</h4>
+                                    <span class="topgame-card-btn">Others</span>
+                                </div>
+                            </div>
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>GTA5</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/banner/7F21C5AAE1021C882B2D73D67F556BFC_e2031e43bd90ddd97298400b390af77b.jpg/w256_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >GTA 5</h3>
+                                    <h4 class="topgame-card__numberviews">17 lives</h4>
+                                    <span class="topgame-card-btn">PC game</span>
+                                </div>
+                            </div>
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>Dead by DayLight</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/game/83A6678559CF6B73394E6F8C6E19B1BB_DeadbyDaylight.jpg/w500_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >Dead by Daylight</h3>
+                                    <h4 class="topgame-card__numberviews">75 lives</h4>
+                                    <span class="topgame-card-btn">PC game</span>
+                                </div>
+                            </div>
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>Rainbow Six Siege</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/game/6FCAAFEBB23328BE25F7FCD59FDA96A4_RainbowSix.jpg/w500_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >Rainbow Six Siege</h3>
+                                    <h4 class="topgame-card__numberviews">10 lives</h4>
+                                    <span class="topgame-card-btn">PC game</span>
+                                </div>
+                            </div>
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>PUBG Mobile</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/banner/6CDF8549BB204CAB769F4B303B192D59_4ae75ac434ef123a99939f231757ccba.jpg/w256_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >PUBG Mobile</h3>
+                                    <h4 class="topgame-card__numberviews">10 lives</h4>
+                                    <span class="topgame-card-btn">Mobile game</span>
+                                </div>
+                            </div>
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>PUBG</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/banner/DE2346FAA2868BC486106C80A3738C42_ce9a7a0f6d9636941570342f395fdc3e.jpg/w256_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >PUBG</h3>
+                                    <h4 class="topgame-card__numberviews">13 lives</h4>
+                                    <span class="topgame-card-btn">PC game</span>
+                                </div>
+                            </div>  
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>AOV</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/banner/DE7C1CFE9B88D5FD34D6F6F16A532149_6fb25842712fdff64d96a97e1ad62a21.jpg/w256_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >AOV</h3>
+                                    <h4 class="topgame-card__numberviews">20 lives</h4>
+                                    <span class="topgame-card-btn">Mobile game</span>
+                                </div>
+                            </div>  
+                            <div class="topgame-card">
+                                <div class="topgame-card__top">
+                                    <div class="topgame-card-img">
+                                        <div class="topgame-card__name">
+                                            <div class="name-game">
+                                                <p>Free Fire</p>
+                                            </div>
+                                            <span>
+                                                <ion-icon class="name-icon-card" name="chevron-forward-outline"></ion-icon>
+                                            </span>
+                                        </div>
+                                        <img src="https://img.nimo.tv/o/banner/3B514EA3DBFD1E0F25CFFDB879FA0E74_2f4bd6de9c373136daac0836034b35fd.jpg/w256_l0/img.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="topgame-card__bottom">
+                                    <h3 class="topgame-card__tittle" >Free Fire</h3>
+                                    <h4 class="topgame-card__numberviews">20 lives</h4>
+                                    <span class="topgame-card-btn">Moblie game</span>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>   
+                </div>
+                <!-- body-game__second -->
+                <div class="body-game__second">
+                    <div class="body-game__recommended-container">
+                        <div class="body-game__recommend">
+                            <div class="topgame-tittle">
+                                <span>Recommended</span>
+                            </div>
+                            <div class="topgame-btn__arrows">
+                                <ion-icon class="i" name="chevron-back-outline" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"></ion-icon>
+                                <ion-icon class="i" name="chevron-forward-outline" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="body-game__recommended-box">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"data-bs-touch="false">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="body-game__recommend-slide carousel-item active" data-bs-interval="1200">
+                                    <img src="https://img.nimo.tv/o/banner/DA1038A1288D9CFD2858166225EE04E9_bd4bc2422781b608a7aa72a7be776293.jpg/w999_l0/img.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="body-game__recommend-slide carousel-item" data-bs-interval="2500">
+                                    <img src="https://img.nimo.tv/o/banner/2F4DCC73A6EBE716FF60BF954B08604_8ca7c1ba33f7da4f59621f728eaff4a7.jpg/w999_l0/img.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="body-game__recommend-slide carousel-item" data-bs-interval="4000">
+                                    <img src="https://img.nimo.tv/o/banner/CD645CF998C2123D58373A9F721D12A7_34925d21d7f73e4cebfc7bd5f9e1020a.jpg/w999_l0/img.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="body-game__recommend-slide carousel-item" data-bs-interval="7000">
+                                    <img src="https://img.nimo.tv/o/banner/BE492024719014E2C22125BCAF9278BD_bd4bc2422781b608a7aa72a7be776293.jpg/w999_l0/img.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="body-game__recommend-slide carousel-item" data-bs-interval="7000">
+                                    <img src="https://img.nimo.tv/o/banner/192282613FE9C34F37E92298BD98C505_bd4bc2422781b608a7aa72a7be776293.jpg/w999_l0/img.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="body-game__second-others">
+                                <div class="body-game__second-others__img1">
+                                    <img src="https://img.nimo.tv/o/banner/54EA21FB328A0B4C80ACD695E5C8556A_8ca7c1ba33f7da4f59621f728eaff4a7.jpg/w600_l0/img.webp" alt="">
+                                </div>
+                                <div class="body-game__second-others__img2">
+                                    <img src="https://img.nimo.tv/o/banner/DDB045EBABE3B20F26DDBA02879BD350_bd4bc2422781b608a7aa72a7be776293.jpg/w600_l0/img.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- event -->
+                    <div class="body-game__events-container">
+                        <div class="body-game__events">
+                            <div class="body-game__events-top">
+                                <div class="topgame-tittle">
+                                    <span>Esports Events</span>
+                                    <p>All Events
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </p>
+                                </div>
+                                <!-- <div class="topgame-btn__arrows">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div> -->
+                            </div>
+                            <div class="body-game__events-silde owl-carousel owl-theme">
+                                <div class="card">
+                                    <span class="card_name-game-live">PUBG Mobie</span>
+                                    <div class="events-card-top">
+                                        <img src="https://img.nimo.tv/o/banner/B9245028BB37D712A05E07BF3FF84688_83db53ab337a2291378666dd3fb0daf5.jpg/w640_l0/img.webp" class="card-img-top" alt="...">
+                                        <p>PMPL FALL TOURNAMENT</hp>
+                                    </div>
+                                    <div class="events-card-body">  
+                                        <div class="events-content-infor">
+                                            <h4>Jul 24, 1:45 AM</h4>  
+                                            <div class="event-content-infor__img">
+                                                <img src="https://img.nimo.tv/o/banner/353D51AA0A89C83AA34B732F7EAA4BFF_88087497f46dbe237e3d90ee4eadc713.jpg/w120_l0/img.webp" alt="">
+                                            </div>
+                                            <div class="events-content-infor__btn">
+                                                <span>End</span>
+                                            </div>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <span class="card_name-game-live">Free Fire</span>
+                                    <div class="events-card-top">
+                                        <img src="https://img.nimo.tv/o/banner/51A7B2D7F4691D0E9D77EF0FF02316B8_ae654df1a3d0d7de2a5f32ea94420de3.jpg/w640_l0/img.webp" class="card-img-top" alt="...">
+                                        <p>the ALL STAR NIMO TV CUP.</hp>
+                                    </div>
+                                    <div class="events-card-body">  
+                                        <div class="events-content-infor">
+                                            <h4>Jul 24, 1:45 AM</h4>  
+                                            <div class="event-content-infor__img">
+                                                <img src="https://img.nimo.tv/o/banner/2270CC099F42E0257C362B96FD6A69EE_c3155e11f76e76b04b8ca88bf20844a6.png/w120_l0/img.webp" alt="">
+                                            </div>
+                                            <div class="events-content-infor__btn">
+                                                <span>End</span>
+                                            </div>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <span class="card_name-game-live">PUBG</span>
+                                    <div class="events-card-top">
+                                        <img src="https://img.nimo.tv/o/banner/ED75973729E640406BE65AE0BDB8661B_bc71a8778c9644329e9605f2a652a324.png/w640_l0/img.webp" class="card-img-top" alt="...">
+                                        <p>WDPVO 2022</hp>
+                                    </div>
+                                    <div class="events-card-body">  
+                                        <div class="events-content-infor">
+                                            <h4>SEP 10, 5:00 PM</h4>  
+                                            <div class="event-content-infor__img">
+                                                <img src="https://img.nimo.tv/o/banner/B1D330B78401F375BAA3DA40082D05F1_fa40f847e5993815304eed2b98cb2d61.png/w120_l0/img.webp" alt="">
+                                            </div>
+                                            <div class="events-content-infor__btn">
+                                                <span>End</span>
+                                            </div>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- body-third -->
+                <div class="body-game-third">
+                    <div class="topgame-tittle">
+                        <span>Hot</span>
+                        <p>More
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </p>
+                    </div>
+                    <div class="body-game-third__container row">
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">GTA5</span>
+                            <img src="https://img.nimo.tv/o/banner/DCF7CD4145A4C8A9334FCBF4818B193F_a4d50a50f87f19abe943b3d86695b8db.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1659511720370/202103221616419112115_1659511720370_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>Hi ae!!!</h4>
+                                    <h5>Pino</h5>
+                                    <div class="content-infor__btn">
+                                        <span>skills</span>
+                                        <span>Humor</span>
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                        <span>63.3k</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">Liveshow</span>
+                            <img src="https://img.nimo.tv/o/banner/60E5772B3C5D3CAA3EAF2341EE1044E6_d1e6b53e9fe1cc81d373977e2db84d00.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1639511734795/202106081623144614350_1639511734795_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>[MISTHY] Co yta Thichhon vao ma</h4>
+                                    <h5>Misthy</h5>
+                                    <div class="content-infor__btn">
+                                        <span>skills</span>
+                                        <span>Humor</span>
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                        <span>25.3k</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">League of Lengends</span>
+                            <img src="https://img.nimo.tv/o/banner/DECD33AA4B29E54405AD2E5068DA6AFE_a675f4a1d7c2d39aaa8aaa22ded88b29.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1629511905172/202111241637776500538_1629511905172_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>Toi vui ve!!</h4>
+                                    <h5>Thầy Giáo Ba</h5>
+                                    <div class="content-infor__btn">
+                                        <span>Bet</span>
+                                        <!-- <span>Humor</span> -->
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                        <span>53.6k</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">GTA5</span>
+                            <img src="https://img.nimo.tv/o/banner/D840FA8805689324B88A6A8053BD77CB_4d79445c29e89f91ce7c4873d070278e.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1629512042595/202105081620494630554_1629512042595_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>from Nhism with love ✨</h4>
+                                    <h5>Nhism</h5>
+                                    <div class="content-infor__btn">
+                                        <span>skills</span>
+                                        <span>Charismatic</span>
+                                        <span>Humor</span>
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                        <span>645</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">CS:GO</span>
+                            <img src="https://img.nimo.tv/o/banner/3722D3FEAF72B88B84FFB69F38C31A0B_198e3bcedfff4e20b2a231723b0575b7.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1599517086452/202008181597748427608_1599517086452_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>ESL Pro League S16 Ngày 11</h4>
+                                    <h5>500 BROS FPS</h5>
+                                    <div class="content-infor__btn">
+                                        <!-- <span></span>
+                                        <span></span> -->
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                        <span>9.6k</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">Just Chatting</span>
+                            <img src="https://img.nimo.tv/o/banner/EFC545CEFCCD5E5671A2D79323D6C4DB_fc036ae318477f4a46c623820f28e5bb.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1939513246539/202102251614233690795_1939513246539_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>its dev nguyxn on god</h4>
+                                    <h5>Dev Nguyen</h5>
+                                    <div class="content-infor__btn">
+                                        <!-- <span>skills</span>
+                                        <span>Humor</span> -->
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                        <span>19.1k</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">League of Legends</span>
+                            <img src="https://img.nimo.tv/o/banner/A069FD820CC8164B7DD27A799D7558F7_e6aae5a261af878497678865797f73ed.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1629511740593/202208121660320637432_1629511740593_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>Ú Òa !!!</h4>
+                                    <h5>Chubby</h5>
+                                    <div class="content-infor__btn">
+                                        <span>Tiếng Việt</span>
+                                        <!-- <span>Humor</span> -->
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                        <span>2.4k</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-game__play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <span class="card_name-game-live">Just Chatting</span>
+                            <img src="https://img.nimo.tv/o/banner/29A611C077D07088F74342C01735CD6F_87a64861b3afda390ae1ba9860f4710a.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="content-user">
+                                    <img src="https://img.nimo.tv/t/1639517503200/202203181647624435743_1639517503200_avatar.png/w120_l0/img.webp" alt="...">
+                                </div>    
+                                <div class="content-infor">
+                                    <h4>Chao buoi sang!!!</h4>
+                                    <h5>SBTC Anie</h5>
+                                    <div class="content-infor__btn">
+                                        <span>skills</span>
+                                        <span>Humor</span>
+                                    </div>
+                                </div>
+                                <div class="content-views">
+                                    <i class="fa-solid fa-user-group">
+                                    </i>
+                                    <span>33.3k</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- body-four -->
+                <div class="body-teams__container">
+                    <div class="body-teams__box">
+                        <div class="body-teams__top">
+                            <div class="topgame-tittle">
+                                <span>Pro Teams</span>
+                            </div>
+                            <!-- <div class="topgame-btn__arrows">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div> -->
+                        </div>
+                        <div class="body-teams__slide">
+                            <div class="teams__slide-card owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="teams-card"> 
+                                        <div class="teams-card__img">
+                                            <img src="https://img.nimo.tv/o/banner/42F04521FB82E3237194393E48315D90_d3688afbc816aaf948e8199cc66b2522.jpg/w680_l0/img.webp" alt="">
+                                        </div>
+                                        <div class="team-card__ticket-box">
+                                            <div class="ticket-box__container">
+                                                <div class="ticket-img">
+                                                    <img src="https://img.nimo.tv/o/banner/DB824B59D87705CEB8B2E5075CEE70F4_598896c9fabd9e0d53759f1675ae1751.jpg/w180_l0/img.webp" alt="">
+                                                </div>
+                                                <div class="ticket-text">
+                                                    <p>Team GOD</p>
+                                                </div>
+                                                <div class="ticket-box__icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="teams-card__tittle">
+                                          <p class="card-text">Team Competitivo Region: Sur/Norte</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="teams-card"> 
+                                        <div class="teams-card__img">
+                                            <img src="https://img.nimo.tv/o/banner/1AF04E0156E0F9B5AC4EB982FF189945_c9fde492bb3a5a83d70c126e8b7f8808.jpg/w680_l0/img.webp" alt="">
+                                        </div>
+                                        <div class="team-card__ticket-box">
+                                            <div class="ticket-box__container">
+                                                <div class="ticket-img">
+                                                    <img src="https://img.nimo.tv/o/banner/297864DBCF1038EB3B0A58B2A005A403_4832fff10d6a003591cc8ed605ffdf76.jpg/w180_l0/img.webp" alt="">
+                                                </div>
+                                                <div class="ticket-text">
+                                                    <p>S8ul</p>
+                                                </div>
+                                                <div class="ticket-box__icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="teams-card__tittle">
+                                          <p class="card-text">Indian NO.1 Team</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="teams-card"> 
+                                        <div class="teams-card__img">
+                                            <img src="https://img.nimo.tv/o/banner/66FDFAC5EDEF7CD99C13D7BFEE60C8B1_c88326411cacf54388dd51e2b20c72a2.png/w680_l0/img.webp" alt="">
+                                        </div>
+                                        <div class="team-card__ticket-box">
+                                            <div class="ticket-box__container">
+                                                <div class="ticket-img">
+                                                    <img src="https://img.nimo.tv/o/banner/D3B93CBC117ACAF01FD9E4227DF3B226_34eed023c30c59973935f2bb18f09378.png/w180_l0/img.webp" alt="">
+                                                </div>
+                                                <div class="ticket-text">
+                                                    <p>Valencia CF Esports</p>
+                                                </div>
+                                                <div class="ticket-box__icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="teams-card__tittle">
+                                          <p class="card-text">Professional Thailand RoV E-sports Team</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="teams-card"> 
+                                        <div class="teams-card__img">
+                                            <img src="https://img.nimo.tv/o/banner/9CE060027F68817F699D2E9AA22CDA41_6ec6d14f65f2d8a8e80fd4db65b3a966.jpg/w680_l0/img.webp" alt="">
+                                        </div>
+                                        <div class="team-card__ticket-box">
+                                            <div class="ticket-box__container">
+                                                <div class="ticket-img">
+                                                    <img src="https://img.nimo.tv/o/banner/7C82BF4D03D0DD952752DC903EE9DB75_531db1e2a59c3c5e87d2e54136fe7065.png/w180_l0/img.webp" alt="">
+                                                </div>
+                                                <div class="ticket-text">
+                                                    <p>ONIC ESPORTS</p>
+                                                </div>
+                                                <div class="ticket-box__icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="teams-card__tittle">
+                                          <p class="card-text" title="ONIC Esports is a Professional e-Sports Management Team founded in 26th July 2018. ONIC was built in belief where we see the future of entertainment is e-sports. E-sports scene in Indonesia is only at its early stage, and ONIC is here to step up the game with the spirit to be the best e-sports organisation in South East Asia. We manage talents and treat them like our own family and the best of all, make them shine with the best version of their self.">ONIC Esports is a Professional e-Sports Management Team founded in 26th July 2018. ONIC was built in belief where we see the future of entertainment is e-sports. E-sports scene in Indonesia is only at its early stage, and ONIC is here to step up the game with the spirit to be the best e-sports organisation in South East Asia. We manage talents and treat them like our own family and the best of all, make them shine with the best version of their self.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="teams-card"> 
+                                        <div class="teams-card__img">
+                                            <img src="https://img.nimo.tv/o/banner/E873BCECB73F996FA35EBC3DCD31B808_ee71a60cbb1bababe3b08155ea1022e3.jpg/w680_l0/img.webp" alt="">
+                                        </div>
+                                        <div class="team-card__ticket-box">
+                                            <div class="ticket-box__container">
+                                                <div class="ticket-img">
+                                                    <img src="https://img.nimo.tv/o/banner/CFABC34AD4609C77FD1BE6A5CFEF3A0B_4f6957837a3d86e27f615b4c769be956.png/w180_l0/img.webp" alt="">
+                                                </div>
+                                                <div class="ticket-text">
+                                                    <p title="Next Rüya Gaming PUBG Mobile Takımı">Next Rüya Gaming PUBG Mobile Takımı</p>
+                                                </div>
+                                                <div class="ticket-box__icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="teams-card__tittle">
+                                          <p class="card-text"title="Next Rüya Gaming PUBG Mobile Takımı">Next Rüya Gaming PUBG Mobile Takımı</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="teams-card"> 
+                                        <div class="teams-card__img">
+                                            <img src="https://img.nimo.tv/o/banner/13D03A3C2574B3B0B559C0081945BFCE_00d8c7097bd61b99143b4cd5154e0107.jpg/w680_l0/img.webp" alt="">
+                                        </div>
+                                        <div class="team-card__ticket-box">
+                                            <div class="ticket-box__container">
+                                                <div class="ticket-img">
+                                                    <img src="https://img.nimo.tv/o/banner/8B5525656574240A5747F31CC47E3DA5_ad82e3acfc4fe2303d5815dd8e49ac6e.png/w180_l0/img.webp" alt="">
+                                                </div>
+                                                <div class="ticket-text">
+                                                    <p title="BIGETRON ESPORTS">BIGETRON ESPORTS</p>
+                                                </div>
+                                                <div class="ticket-box__icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="teams-card__tittle">
+                                          <p class="card-text" title="With over 150 national championships and a world championship, unmatched viewership hours, and a competent backroom staff, Bigetron is undoubtedly the leading organization in Southeast Asia.over 150 national championships and a world championship, unmatched viewership hours, and a competent backroom staff, Bigetron is undoubtedly the leading organization in Southeast Asia.">With over 150 national championships and a world championship, unmatched viewership hours, and a competent backroom staff, Bigetron is undoubtedly the leading organization in Southeast Asia.over 150 national championships and a world championship, unmatched viewership hours, and a competent backroom staff, Bigetron is undoubtedly the leading organization in Southeast Asia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <!-- liveshow -->
+                <div class="body-liveshow">
+                    <div class="body-game-liveshow">
+                        <div class="topgame-tittle">
+                            <span>Liveshow</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row ">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://img.nimo.tv/c/202209051662382407909_1599517870514_cover.jpg/w800_h452_a1_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599517870514/202206251656138612653_1599517870514_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Oossmm goyyyy</h4>
+                                        <h5>[RB] Bé Nhím</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>96</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://img.nimo.tv/c/202205171652806103175_1599517857269_cover.jpg/w800_h452_a1_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599517857269/202206291656518276631_1599517857269_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>ước dc bụt</h4>
+                                        <h5>[Lh] TrúcLâm</h5>
+                                        <div class="content-infor__btn">
+                                            <span>Tiếng Việt</span>
+                                            <span>PK</span>
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>1.3k</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://img.nimo.tv/c/202209081662640363046_1599518744904_cover.jpg/w800_h452_a1_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599518744904/202209051662340880713_1599518744904_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>ước được bay</h4>
+                                        <h5>[NGU] Mạn Mây</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>3.4k</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://img.nimo.tv/c/202207071657214795408_1599517266278_cover.jpg/w800_h452_a1_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599517266278/202208231661264633768_1599517266278_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>ước có bụt ạ</h4>
+                                        <h5>Bé Lươn</h5>
+                                        <!-- <div class="content-infor__btn">
+                                            <span>skills</span>
+                                            <span>Humor</span>
+                                        </div> -->
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>1.8k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- gta5 -->
+                <div class="body-gta5">
+                    <div class="body-game-gta5">
+                        <div class="topgame-tittle">
+                            <span>GTA5</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://img.nimo.tv/o/banner/127EC899DD73DECA5E6F9F6BF37EE7AD_9fa36e24f9847ac1280c2e23c7ce6423.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629526176455/202204111649641506718_1629526176455_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Ước gặp bụt</h4>
+                                        <h5>Cậu Đỏ</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>375</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1639518615052re00224482ab82aa597c30d86a78f6199_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639518615052/202204011648814860856_1639518615052_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Thần Trùng đây rồi</h4>
+                                        <h5>Kyo</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>102</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1939514417023r9d43c70dfd44cfd5dc6bc0f876749110_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1939514417023/202207191658259518366_1939514417023_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Let's RP | Ming | Ballas Kingz</h4>
+                                        <h5>Gnim</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>94</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1629526704511r2dc7db8238bb81f7e29cbc58c5777f42_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629526704511/202208141660462850976_1629526704511_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Buổi sáng vui vẻ</h4>
+                                        <h5>Vie Gaming</h5>
+                                        <!-- <div class="content-infor__btn">
+                                            <span>skills</span>
+                                            <span>Humor</span>
+                                        </div> -->
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>58px</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LOL -->
+                <div class="body-lol">
+                    <div class="body-game-lol">
+                        <div class="topgame-tittle">
+                            <span>League of legends</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://img.nimo.tv/c/202205051651720644584_1599513905288_cover.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599513905288/202109291632922874904_1599513905288_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>ƯỚC BỤT =))</h4>
+                                        <h5>Zumi</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>2.3k</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://img.nimo.tv/o/banner/660D7F214DC59A24BA6D4A4A24C43F2_59f8316b715edf34c0bdf4bf4bf45562.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599511766915/202112231640225066072_1599511766915_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Ngày mới vui vẻ nha ae</h4>
+                                        <h5>SBTC Violet</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>1.4k</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1599519034136r664efb5615d3593d66aec4132506ddde_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599519034136/202206281656431988598_1599519034136_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Không lên vàng 1 không nghỉ</h4>
+                                        <h5>Toàn Caitlym</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>110</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1629513573060r01a341d24ec0c191e42ebbf34d01b127_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629513573060/202205051651758718805_1629513573060_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>follow me... tập chơi</h4>
+                                        <h5>Sói Bad Body</h5>
+                                        <!-- <div class="content-infor__btn">
+                                            <span>skills</span>
+                                            <span>Humor</span>
+                                        </div> -->
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>73</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PC&CONSOLE -->
+                <div class="body-console">
+                    <div class="body-game-console">
+                        <div class="topgame-tittle">
+                            <span>PC&CONSOLE</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://wspic.vod.nimo.tv/sg/live/338*190/su1599519118795rd03f9e2bedf26bef5fd06eb1c0c334b8.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599519118795/202209021662134253621_1599519118795_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>MIST SURVIVAL</h4>
+                                        <h5>ZinPro</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>72</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://wspic.vod.nimo.tv/sg/live/338*190/su1629519612791rf5a551410f4ad71a3b023ad3e712f5f6.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629519612791/202209051662389480347_1629519612791_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>nay live sớm tối bận nha</h4>
+                                        <h5>green</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>53</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1629512399620r22ee4de81caa509951784296658f538d_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/201811131542140731290_1629512399620_avatar.jpg/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Thần Trùng-DUT Studio</h4>
+                                        <h5>Denniss Samson</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>45</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1639522209609raeba31b4633de790d4d3e6c0dd524da3_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639522209609/202207141657817080901_1639522209609_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>cuongcute</h4>
+                                        <h5>cuong 1989</h5>
+                                        <!-- <div class="content-infor__btn">
+                                            <span>skills</span>
+                                            <span>Humor</span>
+                                        </div> -->
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>34</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- pubg -->
+                <div class="body-pubg">
+                    <div class="body-game-pubg">
+                        <div class="topgame-tittle">
+                            <span>PUBG</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">PickMe</span>
+                                <img src="https://img.nimo.tv/o/banner/2D9B0259EA589A887E3745F8B27F9D38_6992fce781d20bd84c0b60e192c70367.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629512007556/202206291656469301623_1629512007556_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Batu và Thần Nhùng</h4>
+                                        <h5>Batuhuhu</h5>
+                                        <div class="content-infor__btn">
+                                            <span>PickMe</span>
+                                            <!-- <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>1.2k</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://img.nimo.tv/c/202112081638965799695_1629512982860_cover.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629512982860/202111251637826127340_1629512982860_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Mùa hè sôi động</h4>
+                                        <h5>Tứ Slow</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>1.1k</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1599517208627r5b97f0c3d3121f359eb3ede5c45cd86e_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599517208627/202208151660580323139_1599517208627_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Xin 1 follow</h4>
+                                        <h5>Marleyy</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>77</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1629529161230rc82d27c060b97d6ef779f1b3c66425af_338_211.jpg?t=1663295400000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629529161230/202110171634478072458_1629529161230_avatar.jpg/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>onl streamer zDj_Quyzuong2k-_</h4>
+                                        <h5>QuyZuong2k-</h5>
+                                        <!-- <div class="content-infor__btn">
+                                            <span>skills</span>
+                                            <span>Humor</span>
+                                        </div> -->
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>65</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- pubg mobile -->
+                <div class="body-pubgmobile">
+                    <div class="body-game-pubgmobile">
+                        <div class="topgame-tittle">
+                            <span>PUBG Mobile</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">PicKMe</span>
+                                <img src="https://img.nimo.tv/c/202209061662501803431_1839511633457_cover.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1839511633457/202207171658077986573_1839511633457_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Hi Anh Chi Em</h4>
+                                        <h5>Myun97</h5>
+                                        <div class="content-infor__btn">
+                                            <span>PickMe</span>
+                                            <!-- <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>2.1k</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">PickMe</span>
+                                <img src="https://img.nimo.tv/c/202208171660730792305_1659512849795_cover.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1659512849795/202208191660894138253_1659512849795_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Septeamber's Days</h4>
+                                        <h5>Kim GM</h5>
+                                        <div class="content-infor__btn">
+                                            <span>PickMe</span>
+                                            <!-- <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>525</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://img.nimo.tv/c/202208271661563863476_1639517305708_cover.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639517305708/202208161660650100070_1639517305708_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>MÓI MÓI</h4>
+                                        <h5>Z9</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>359</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1599517424003r1694c4f5201cf372b13c40ce18298e63_338_190.jpg?t=1663295400000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599517424003/202209051662364265682_1599517424003_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Test Bản update nào aE ơi</h4>
+                                        <h5>Lion Gaming</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>62</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CSGO -->
+                <div class="body-CSGO">
+                    <div class="body-game-csgo">
+                        <div class="topgame-tittle">
+                            <span>CS:GO</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">CS:GO</span>
+                                <img src="https://txpic.vod.nimo.tv/su1599518052436r3670acfd74912154b242735dcd3075b1_338_190.jpg?t=1663295400000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599518052436/202204231650719502528_1599518052436_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Xem tôi Livestream Tam Quốc Ch</h4>
+                                        <h5>thienlong_zc</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>23</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1629524864434rfbe2801c5f66a49bfd0167fa1423e872_338_190.jpg?t=1663301640000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629524864434/202005011588313188185_1629524864434_avatar.jpg/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>CS CHILL</h4>
+                                        <h5>Đỗ Tiến Đạt</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>53</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://img.nimo.tv/c/202206021654154738659_1639518009765_cover.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639518009765/202012191608390730616_1639518009765_avatar.jpg/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>ăn con game MM tí lát đi bi-a</h4>
+                                        <h5>huyak</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>7</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <!-- free fire -->
+                <div class="body-freefire">
+                    <div class="body-game-freefire">
+                        <div class="topgame-tittle">
+                            <span>Free Fire</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://img.nimo.tv/o/banner/B48598373F3D7A2BA16F5DAE505F324B_2b70fb1f4ee2bf9e26e9639e6b4902d7.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639522247351/202207281659017135198_1639522247351_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>7H Tỹ Tỹ's Live Channel</h4>
+                                        <h5>7H Tỹ Tỹ</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>924</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://img.nimo.tv/o/banner/98200268CA4FA073863DCE629F985C8D_35d4e3aed80e6df58dc8bc170c24891a.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639517225605/202207301659181375593_1639517225605_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Custum cho cả nhà</h4>
+                                        <h5>HEAVY Ruly</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>788</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">Predict</span>
+                                <img src="https://wspic.vod.nimo.tv/sg/live/338*190/su1639522244182raf33e9f96bcfaf8e4b5a315c70efc5f8.jpg?t=1663295400000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639522244182/202207281658988455842_1639522244182_avatar.jpg/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>6vs6 lụm giải</h4>
+                                        <h5>3i.Bé Bê</h5>
+                                        <div class="content-infor__btn">
+                                            <span>Bet</span>
+                                            <!-- <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>546</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1639522250615raad1ea695708463308ad0b336ec708d6_338_190.jpg?t=1663295400000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639522250615/202207311659266436680_1639522250615_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>live và những người ae bất ổn</h4>
+                                        <h5>Mây</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>436</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- aov -->
+                <div class="body-aov">
+                    <div class="body-game-aov">
+                        <div class="topgame-tittle">
+                            <span>Arena of Valor</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">CS:GO</span> -->
+                                <img src="https://img.nimo.tv/o/banner/486EE5E71BCBDB8606A6C05B8286E3A7_c1ce6c3ee206b5218ff97a9357a243c6.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599517873490/202206071654639934340_1599517873490_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>even giải giao lưu game & show</h4>
+                                        <h5>Nimotv Chan</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>436</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">AOV</span>
+                                <img src="https://wspic.vod.nimo.tv/sg/live/338*190/su1629530582489r2d018e537db3088f610261009a81b21d.jpg?t=1663301640000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629530582489/202208061659789963004_1629530582489_avatar.jpg/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Welcome..!</h4>
+                                        <h5>Chiến lê</h5>
+                                        <div class="content-infor__btn">
+                                            <span>Azzen'Ka</span>
+                                            <!-- <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>66</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1599513556705r5e2201f8c369481622d44dad5b96cfe6_338_156.jpg?t=1663301640000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1599513556705/202112221640141668244_1599513556705_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Hello AE</h4>
+                                        <h5>Hiểu Cày Thuê</h5>
+                                        <div class="content-infor__btn">
+                                            <span>Chaugna</span>
+                                            <!-- <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>62</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1629513650262r50bdf0a8adf8e2a6fd716757ce1b0757_338_187.jpg?t=1663301640000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1629513650262/202103041614859647339_1629513650262_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Lộc Lầy Lội đang stream!!!</h4>
+                                        <h5>Nguyễn Thành Lộc</h5>
+                                        <div class="content-infor__btn">
+                                            <span>Gildur</span>
+                                            <!-- <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>84</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Just Chatting -->
+                <div class="body-justchatting">
+                    <div class="body-game-just">
+                        <div class="topgame-tittle">
+                            <span>Just Chatting</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">Just Chatting</span>
+                                <img src="https://txpic.vod.nimo.tv/su2439521761809r718ecfd323e9714cc80327a9436cc8f5_338_190.jpg?t=1663302840000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/2439521761809/202111091636467601851_2439521761809_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>AEW/DINAMITA SHOW/TVLUCHITAS</h4>
+                                        <h5>TVLuchitas</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>0</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">Just Chatting</span>
+                                <img src="https://img.nimo.tv/c/202208201660973306857_1939514149862_cover.jpg/w800_h452_a1_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1939514149862/202105201621486804626_1939514149862_avatar.jpg/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Ps5 god of war more fun</h4>
+                                        <h5>the Hood Of Ga</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>58</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">Just Chatting</span>
+                                <img src="https://img.nimo.tv/o/banner/A09FEAA7B5DDFBF9ABC2EF70271A8218_611b812a64a49bb3dba7ea20c63930a9.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1799511768555/202205301653885746103_1799511768555_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>phim duee</h4>
+                                        <h5>Dr Hunter</h5>
+                                        <div class="content-infor__btn">
+                                            <span>Tiếng Việt</span>
+                                            <!-- <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>575</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">Just Chatting</span>
+                                <img src="https://img.nimo.tv/o/banner/B323AFBBF192F2FC45FFED2871AD5D33_b89db39bcdd402564943bda9a5811bde.jpg/w800_l0/img.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639514113827/202201221642884424496_1639514113827_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>ƯỚC BỤTTTT</h4>
+                                        <h5>fat</h5>
+                                        <div class="content-infor__btn">
+                                            <span>Tiếng Việt</span>
+                                            <!-- <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>33.3k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- genshin -->
+                <div class="body-genshin">
+                    <div class="body-game-genshin">
+                        <div class="topgame-tittle">
+                            <span>Genshin Impact</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="body-game-third__container like row">
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span class="card_name-game-live">Ghenshin</span>
+                                <img src="https://txpic.vod.nimo.tv/su1639518166255r9b9daa428934881a23633ea7ed115af4_338_190.jpg?t=1663289880000" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639518166255/202207301659172468757_1639518166255_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Nguyên Thạch Miễn Phí</h4>
+                                        <h5>Tún</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span></span>
+                                            <span></span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>83</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1639518341765r01cc2fb2a9740d8e35d3a8c72b8c2bdd_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639518341765/202208281661686477673_1639518341765_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Muốn xóa kênh</h4>
+                                        <h5>Không Bạch</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>68</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">League of Legends</span> -->
+                                <img src="https://txpic.vod.nimo.tv/su1639522330459r89eac7a193c5f3a1509b868184b43fd7_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639522330459/202209051662388273170_1639522330459_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>Lần đầu chơi</h4>
+                                        <h5>Quốc</h5>
+                                        <div class="content-infor__btn">
+                                            <!-- <span>skills</span>
+                                            <span>Humor</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                            <span>68</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-game__play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                <img src="https://wspic.vod.nimo.tv/sg/live/338*190/su1639514025794r866aec0250740dfcbfe665fbcfecef12.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="content-user">
+                                        <img src="https://img.nimo.tv/t/1639514025794/202207071657160115405_1639514025794_avatar.png/w120_l0/img.webp" alt="...">
+                                    </div>    
+                                    <div class="content-infor">
+                                        <h4>hello ae :D</h4>
+                                        <h5>machivan</h5>
+                                        <!-- <div class="content-infor__btn">
+                                            <span>skills</span>
+                                            <span>Humor</span>
+                                        </div> -->
+                                    </div>
+                                    <div class="content-views">
+                                        <i class="fa-solid fa-user-group">
+                                        </i>
+                                        <span>33.3k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Voice Room -->
+                <div class="body-voice">
+                    <div class="body-game-voic">
+                        <div class="topgame-tittle">
+                            <span>Voice Room</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="voice__box">
+                            <div class="body-game-third__container like row">
+                                <div class="card">
+                                    <div class="card-game__play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <span class="card_name-game-live">chatting room</span>
+                                    <img src="https://img.nimo.tv/c/202208191660893942882_1639522261398_cover.png/w800_h452_a1_l0/img.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="content-user">
+                                            <img src="https://img.nimo.tv/t/1639522261398/202209111662903856340_1639522261398_avatar.png/w120_l0/img.webp" alt="...">
+                                        </div>    
+                                        <div class="content-infor">
+                                            <h4>❤️MUSIC CLB ❤️</h4>
+                                            <h5>ʚBaby Mèoツ</h5>
+                                            <div class="content-infor__btn">
+                                                <!-- <span></span>
+                                                <span></span> -->
+                                            </div>
+                                        </div>
+                                        <div class="content-views">
+                                            <i class="fa-solid fa-user-group">
+                                                <span>31</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-game__play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <span class="card_name-game-live">chatting room</span>
+                                    <img src="https://img.nimo.tv/c/202207051657065558104_1639519442787_cover.png/w800_h452_a1_l0/img.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="content-user">
+                                            <img src="https://img.nimo.tv/t/1639519442787/202209061662462508830_1639519442787_avatar.png/w120_l0/img.webp" alt="...">
+                                        </div>    
+                                        <div class="content-infor">
+                                            <h4>Ước được tặng cỏ và tim</h4>
+                                            <h5>Tashalina</h5>
+                                            <div class="content-infor__btn">
+                                                <!-- <span>skills</span>
+                                                <span>Humor</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="content-views">
+                                            <i class="fa-solid fa-user-group">
+                                                <span>32</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- valorant -->
+                <div class="body-valorant">
+                    <div class="body-game-valorant">
+                        <div class="topgame-tittle">
+                            <span>VALORANT</span>
+                            <p>More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                        </div>
+                        <div class="valorant__box">
+                            <div class="body-game-third__container like row">
+                                <div class="card">
+                                    <div class="card-game__play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <span class="card_name-game-live">Valorant</span>
+                                    <img src="https://img.nimo.tv/o/banner/9632113F14DD5853F912891E2AA08A3A_cbc0e9ff3c6e4ff033b9da9b2f6a62fc.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="content-user">
+                                            <img src="https://img.nimo.tv/t/1639520106803/202208201661029693841_1639520106803_avatar.png/w120_l0/img.webp" alt="...">
+                                        </div>    
+                                        <div class="content-infor">
+                                            <h4>Ác quỷ nè>:)</h4>
+                                            <h5>SBTC WachTy</h5>
+                                            <div class="content-infor__btn">
+                                                <!-- <span></span>
+                                                <span></span> -->
+                                            </div>
+                                        </div>
+                                        <div class="content-views">
+                                            <i class="fa-solid fa-user-group">
+                                                <span>2.9k</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-game__play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                    <img src="https://txpic.vod.nimo.tv/su1639520763151r718b5f9f8fc2e90ba5daddf46c5aaff1_338_190.jpg?t=1663289880000" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="content-user">
+                                            <img src="https://img.nimo.tv/t/1639520763151/202111271638043171713_1639520763151_avatar.png/w120_l0/img.webp" alt="...">
+                                        </div>    
+                                        <div class="content-infor">
+                                            <h4>100kg</h4>
+                                            <h5>Gaming Gin</h5>
+                                            <div class="content-infor__btn">
+                                                <!-- <span>skills</span>
+                                                <span>Humor</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="content-views">
+                                            <i class="fa-solid fa-user-group">
+                                                <span>32</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-game__play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <!-- <span class="card_name-game-live">Just Chatting</span> -->
+                                    <img src="https://img.nimo.tv/c/202209151663229788685_1999514694447_cover.png/w800_l0/img.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="content-user">
+                                            <img src="https://img.nimo.tv/t/1999514694447/202208311661975175434_1999514694447_avatar.png/w120_l0/img.webp" alt="...">
+                                        </div>    
+                                        <div class="content-infor">
+                                            <h4>
+                                                Gharnou9 KEN BATAL IJA ERKESH BAHDHENA
+                                            </h4>
+                                            <h5>Gharnou9</h5>
+                                            <div class="content-infor__btn">
+                                                <span>Frane</span>
+                                                <!-- <span>Humor</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="content-views">
+                                            <i class="fa-solid fa-user-group">
+                                                <span>132</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-icon">
+                        <a href="">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>        
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="footer-meta">
+                        <ul class="meta-list">
+                            <li class="meta-item">
+                                <a href="">About us</a>
+                            </li>
+                            <li class="meta-item">
+                                <a href="">Contact us</a>
+                            </li>
+                            <li class="meta-item">
+                                <a href="">Download</a>
+                            </li>
+                            <li class="meta-item">
+                                <a href="">Cookie Policy</a>
+                            </li>
+                            <li class="meta-item">
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li class="meta-item">
+                                <a href="">Terms</a>
+                            </li>
+                            <li class="meta-item">
+                                <a href="">Thank You List</a>
+                            </li>
+                            <li class="meta-item-8">
+                                <a href="">Open Platform</a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <div class="footer-year">
+                        <p>Copyright © 2018-2022 Huya PTE. LTD. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="recharge modal-box">
+                    <div class="recharge-modal-logo">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAABACAMAAAAXtNroAAAApVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+4/eNVAAAANnRSTlMAmu6xuIE/RfvlI97FCEzqVBxQN8oCE/j0DcChKI3Y0m8E4bWsaWK9p1zOLReUiHvwdUk8VzMa5A6zAAAGW0lEQVRo3uWb2XaqMBRAjzNaKdIyKqNFxHlqz/9/2r0l0UjILZIXF737qXYxbZOcIaXwOCM/dKZ9+H+4JAr+xdnA/0G8MpAyhv8B6zDEGw78fjYtG+8Ywm/ndYlFlvCrcRcB8uzgF6P7bWTMTz38JoLfitlPFGSMJyYQ5U/4VXif0b41m2VJMtWQoWRf8JeMhK9sNpvtDulAhcbj+QGK0PY65KyxgNNJY2gy+kxBEWGqAsVBnpcVyDGaBeNDDE8ltVHExwBu6ChgupVK9U4eH0x4HvEOBRx3XmFkUMT8C+ozxpwFPI8ZMhTbOba1YNl65eNTL5gPNa19dGwFGU59Z5Wen8HTOFxtO6nnwiPE+mX/ch3nbW1luopm8CwGSEg8qIOZarK9VRdzVvAkzIAMcQR10Q3JRx8NnzuvF5iTQn3cNZnaKtTE6nWzFTwNsiZ9kEFv02FuFBtSYrkgxSk/uwONgjQLB5BDPeaJqln1NomeHkjAeo13/pvYz7WZBRyroJ2Qen2btV8iIHwuwxaf56xduORaNj3qhJoyXCcpf13zZLwIGUcm/wTGdAEQst0d+eA3EdU2gSVIhuv8IQ3WeZ/y+4+KEX3Oz7z+GG8onQ03TwUIM/8b/uUEeQAyoIQp3uk8cYv+VbRvYGGOoQpqvM0tfoT5oaQsCVxguCFRs4Cy/cACSuv+8Dn+m37h6fMj54DfdPnss9Oc7gZ4PKO0EfSen9+DAv1rV2LCHWQXbXD7ntr3dVCXHWpeBc/XewyRJ7ybFgEKKQfWT/y3sjnN2wodikQ2l82qlLEFd0xFym/lQ3dImdAFYWMZzWMLFP+NMip1My2h8kC0s6fmgS5z6yhj72FlTCyyKBIsKnttvGJrCuvVLfa4rU7OkhxEPnRt3uELczyhciTavz3Tfq+WMi4eVsa2/3Z584kgU1aD61xe6ACmdyJLlz0z394OC4H16HKxpAtC5bNolLfa92Otaiorb1XKPJzyiQ7wwgSCeo3Qrz8rq1oxsm5tcv+yMksizojLjF0ybLWU0b4AZSmjbJFRd96B8amQKG+KlYvJ68UsfAxBrAzW7KiMv4Bn4SDOaipj25NWZk3Pm6jB7/+svLXvT43JoKdMmcdU6fSY+AuXXTTreHWVca5XTuz1Hu/x1zflrqiIjwNu4QmVoUW25+7juqZyymXc8fdFUhMYDyuv+zYNPG6V8gekDl5xUuhclV0yhy9QJCVztkJ5gzmbuy3pHlQq+0ifXkJ5DBOaU6ZqxcT+ANi2jkS4pQNT9sjYmCAq7xTzZ2XosqrzQgLLtlp5jJSOJ6EMERISs2qU/6Keo310VgHulAf0SjxkYeoVygPiaQFAQsuQamWDZRvfqq8M1zW6qxplRkF5IljKrMjcVChDeO2MdYWdUKnMaEdxbWXIkHCSUWZX4iGpa1ulnJLfxLCnmjWUCZ24tnK8RMJKRplatPn76lVruViOrFTyFZ3rK2NUU5l1gqi8GhLK6rVkElXEAVQp0/pjfaDHSyh36iuDPkeKhDL9aQoFVHLJfbWyZSMjlVH2JZRJKySrnNKnFaXO92plaOENTZVQbm9klKFvyyu7Gl0W5UbPgAeUPbzRg/rK4RdIKcNEkVRmRbbSU4FgXQeuX6HMyhFahtRW1hYmSCpDJK9srpEw7L1bptX3j0jI4CHlAdv6q6ls+y6AtDL40sqgD1HE2n1MGUIkbB5UTpCQjGRq7DsyaWX4ouMqbM+qlVO2xVOpzCKPcQGCvHI8RcJFpNwRKLMm2QsqX9jglcvlyBluOCzvCZ2nznoFPLzdSVQczQDKm9OOewujRq4jzLD74lR0uXd3nH0MAlxFGMgPfNnyQjpPWVbsT4/cNFa4tKnndzqxUZzclo6mA5T32RJgeInNhFv6T8vwBByWxt7QY4274oIke2FBGPfGnQtwWL7RpXdWD+POmR66yPyygu5ni7g4hJNWNxyuP3akvRTiZo7WgxJf3fWiXJ58giQBbVybxCstYiVgWz7QKFSHbgpLYdAevFmQma3p8itZGUGz0MkwhxLOUVPfSu/RGvoM9bBmmHO0oGmoBhKWLP5XMzq0kTCB5rGdI8UZJ61HmHXz5NTI2EXw5iiND83EmqIcdsPecrsjPhxRgmmj/wPS2mtYk/EAGo558ZdhGx9BmRtJuoVm8gdWp9DbyVMtvQAAAABJRU5ErkJggg==" alt="">
+                    </div>
+                    <div class="recharge-modal-btn">
+                        <a href="" class="login-recharge">Login</a>
+                        <a href="" class="signup-recharge">Sign Up</a>
+                    </div>
+                </div>
+                <div class="recharge-modal-closr">
+                    <i class="fa-solid fa-xmark"  type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></i>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-container">
+                    <div class="modal-body-box1">
+                        <h2>Log in via mobile</h2>
+                        <div class="modal-body-login-input">
+                           <form action="">
+                            <div class="btn-numberphone">
+                                <input type="text" placeholder="Enter Mobile Number">
+                            </div>
+                            <div class="btn-password">
+                                <input type="password" placeholder="Enter Password">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <p>
+                                <a href="">Forgot Password</a>
+                            </p>
+                            <div class="btn-submit">
+                                <input type="submit" value="Login">
+                            </div>
+                           </form>
+                        </div>
+                    </div>
+                    <div class="modal-body-box2">
+                        <div class="modal-body-login-apps">
+                            <div class="login-apps-box">
+                                <h2>Log in via third-party apps </h2>
+                                <div class="login-apps">
+                                    <img src="https://www.nimo.tv/nms/images/fb.cef7e0196a425b1048e237b066853fc3.png" alt="">
+                                    <p>Logged in as...</p> 
+                                </div>
+                                <div class="login-apps">
+                                    <img src="	https://www.nimo.tv/nms/images/gg.aa32e0112633342e04844fbfc7b63a0d.png" alt="">
+                                    <p>Google</p> 
+                                </div>
+                                <div class="login-apps">
+                                    <img src="https://www.nimo.tv/nms/images/tw.d0d9e4853afe6acaad9577a0f36134b2.png" alt="">
+                                    <p>Twitter</p>
+                                </div>
+                            </div>
+                            <div class="text-more">
+                                More
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="login-apps-footer">
+                                <p>Login means you agree the <a href="">Teams </a>and <a href="">Privacy.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script>
+      $('.body-game__events-silde').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText: ['<i class="fa-solid fa-angle-left"></i>' , '<i class="fa-solid fa-angle-right"></i>'],
+     responsive:{
+        0:{
+            items:1.8
+        },
+    }
+    })
+    // slide-card-team
+      $('.teams__slide-card').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText: ['<i class="fa-solid fa-angle-left"></i>' , '<i class="fa-solid fa-angle-right"></i>'],
+     responsive:{
+        0:{
+            items:2.3
+        },
+    }
+    })
+      $('.topgame-card-slide').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText: ['<i class="fa-solid fa-angle-left"></i>' , '<i class="fa-solid fa-angle-right"></i>'],
+     responsive:{
+        0:{
+            items:6.6
+        },
+    }
+    })
+    </script>
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
